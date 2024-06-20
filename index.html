@@ -21,29 +21,54 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            background-color: #4f4f4f;
+            background-color: #101010;
             display: flex;
             flex-direction: column;
-            color: #4f4f4f;
+            color: #aaa;
         }
 
         .container {
             flex: 1;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         header {
-            background: #4f4f4f;
-            color: #a0f;
-            padding: 1rem 0;
+            background: #407;
+            color: #ddd;
+            padding: 50px 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            position: relative;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+        }
+
+        header h3 {
+            margin: 10px 0;
+            font-size: 2rem;
+            color: #c3a6e6;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        .header-img {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: url('your-image.png') no-repeat center center / cover;
         }
 
         nav ul {
@@ -67,13 +92,10 @@
 
         main {
             flex: 1;
-            margin: 20px auto;
             width: 90%;
             max-width: 1200px;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
+            background: #ffffff00;
+            text-align: right;
         }
 
         section {
@@ -82,15 +104,27 @@
 
         h2 {
             font-size: 2rem;
-            color: #333;
+            color: #ffffff;
             margin-bottom: 20px;
-            border-bottom: 2px solid #b800d0;
+            border-bottom: 2px solid #c3009c;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
             padding-bottom: 10px;
         }
 
         p {
             font-size: 1.1rem;
-            margin-bottom: 20px;
+            text-align: left;
+            padding-left: 30px;
+            padding-right: 60%;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin-bottom: 0px;
         }
 
         ul {
@@ -100,7 +134,7 @@
 
         ul li {
             background: #fe106b00;
-            color: #000000;
+            color: #ffffff;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
@@ -111,7 +145,7 @@
         .portfolio-item {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-end;
             margin-top: 20px;
         }
 
@@ -145,51 +179,49 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
+            width: 100%;
         }
 
         footer p {
             margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item div {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Adenipekun Adetunji</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Tunji</h1>
+            <h3>Frontend Developer</h3>
+            <p>Hi, I'm Adenipekun Adetunji, a web developer passionate about creating interactive and user-friendly websites. With a background in computer science, I have a strong foundation in coding and design.</p>
+            <div class="header-img"></div>
         </header>
         <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Hi, I'm Adenipekun Adetunji, a web developer passionate about creating interactive and user-friendly websites. With a background in computer science, I have a strong foundation in coding and design.</p>
-            </section>
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="portfolio-item">
                     <div>
-                        <img src="project1.png" alt="Project 1">
+                        <img src="project1.png" alt="Screenshot of Project 1">
                         <h3>Project 1</h3>
                         <p>Description of project 1.</p>
                     </div>
                     <div>
-                        <img src="project2.png" alt="Project 2">
+                        <img src="project2.png" alt="Screenshot of Project 2">
                         <h3>Project 2</h3>
                         <p>Description of project 2.</p>
                     </div>
                     <div>
-                        <img src="project3.png" alt="Project 3">
+                        <img src="project3.png" alt="Screenshot of Project 3">
                         <h3>Project 3</h3>
                         <p>Description of project 3.</p>
                     </div>
                     <div>
-                        <img src="project4.png" alt="Project 4">
+                        <img src="project4.png" alt="Screenshot of Project 4">
                         <h3>Project 4</h3>
                         <p>Description of project 4.</p>
                     </div>
