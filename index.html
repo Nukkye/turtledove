@@ -169,6 +169,11 @@
             border-radius: 10px;
         }
 
+        /* Add CSS to resize the project1 image */
+        .portfolio-item .project1-img {
+            width: 80%; /* Adjust the width as needed */
+        }
+
         /* Add CSS to center the third portfolio item */
         .center-item {
             margin-left: auto;
@@ -208,21 +213,27 @@
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="portfolio-item">
-                    <div>
-                        <img src="project1.png" alt="Screenshot of Project 1">
-                        <h3>Minefield</h3>
-                        <p>A two player board game, I programmed in python, in which your objective is to land on the opponents "target" </p>
-                    </div>
-                    <div>
-                        <img src="projec2.png" alt="Screenshot of Project 2">
-                        <h3>Pixel Calendar</h3>
-                        <p>For this project, I designed a calendar from scratch. The website itself, however, isn't really complicated.</p>
-                    </div>
-                    <div class="center-item">
-                        <img src="project3.png" alt="Screenshot of Project 3">
-                        <h3>Color Will</h3>
-                        <p>This is a small game which requires basic knowledge of color codes to play well.</p>
-                    </div>
+                    <a href="project1.html">
+                        <div>
+                            <img class="project1-img" src="project1.png" alt="Screenshot of Project 1">
+                            <h3>Minefield</h3>
+                            <p>A two player board game, I programmed in python, in which your objective is to land on the opponents "target"</p>
+                        </div>
+                    </a>
+                    <a href="project2.html">
+                        <div>
+                            <img src="project2.png" alt="Screenshot of Project 2">
+                            <h3>Pixel Calendar</h3>
+                            <p>For this project, I designed a calendar from scratch. The website itself, however, isn't really complicated.</p>
+                        </div>
+                    </a>
+                    <a href="project3.html">
+                        <div class="center-item">
+                            <img src="project3.png" alt="Screenshot of Project 3">
+                            <h3>Color Will</h3>
+                            <p>This is a small game which requires basic knowledge of color codes to play well.</p>
+                        </div>
+                    </a>
                 </div>
             </section>
             <section id="skills">
@@ -248,3 +259,4 @@
     </footer>
 </body>
 </html>
+
