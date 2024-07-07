@@ -149,7 +149,7 @@
             margin-top: 20px;
         }
 
-        .portfolio-item div {
+        .portfolio-item a {
             width: 48%;
             margin-bottom: 20px;
             background: #00000000;
@@ -157,9 +157,11 @@
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
         }
 
-        .portfolio-item div:hover {
+        .portfolio-item a:hover {
             transform: translateY(5px);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
@@ -171,7 +173,7 @@
 
         /* Add CSS to resize the project1 image */
         .portfolio-item .project1-img {
-            width: 10%; /* Adjust the width as needed */
+            width: 80%; /* Adjust the width as needed */
         }
 
         /* Add CSS to center the third portfolio item */
@@ -182,7 +184,7 @@
         }
 
         @media (max-width: 768px) {
-            .portfolio-item div,
+            .portfolio-item a,
             .center-item {
                 width: 100%;
             }
@@ -259,4 +261,3 @@
     </footer>
 </body>
 </html>
-
