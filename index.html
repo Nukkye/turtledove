@@ -18,16 +18,27 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background: url('graphic backdrop.png') no-repeat center center fixed;
-            background-size: cover; /* This will make the image cover the whole screen */
+           margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-image: url('your-image.png'); /* Background image */
+            background-size: cover;
+            background-position: center;
             display: flex;
-            flex-direction: column;
-            color: #aaa;
+            justify-content: center;  /* Center horizontally */
+            align-items: center;      /* Center vertically */
         }
 
+        /* Opaque content frame */
+        .content {
+            background-color: white; /* Fully opaque background */
+            padding: 40px;
+            width: 60%;
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            border-radius: 15px;  /* Optional: Rounded corners */
+        }
 
         .container {
             flex: 1;
@@ -36,6 +47,10 @@
             align-items: center;
         }
 
+         h1, p {
+            color: #333; /* Dark text for readability */
+        }
+        
         header {
             background: #407;
             color: #ddd;
@@ -211,6 +226,7 @@
     </style>
 </head>
 <body>
+    
     <div class="content">
         <h1>Opaque Frame Holding the Text</h1>
         <p>
@@ -219,7 +235,7 @@
             ensuring that the content remains clear and easy to read.
         </p>
     </div>
-        
+    
     <div class="container">
         <header>
             <h1>Tunji</h1>
