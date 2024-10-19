@@ -18,18 +18,22 @@
         }
 
         body {
-           margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            background-image: url('your-image.png'); /* Background image */
-            background-size: cover;
-            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #101010;
             display: flex;
-            justify-content: center;  /* Center horizontally */
-            align-items: center;      /* Center vertically */
+            flex-direction: column;
+            color: #aaa;
         }
-        
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         header {
             background: #407;
             color: #ddd;
@@ -205,7 +209,6 @@
     </style>
 </head>
 <body>
-    
     <div class="container">
         <header>
             <h1>Tunji</h1>
